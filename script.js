@@ -12,7 +12,7 @@ addToDoButton.onclick = function () {
     paragraph.innerHTML = inputField.value;
 
     //style du paragaphe
-    paragraph.classList.add("paragraphe_style")
+    paragraph.classList.add("paragraphe_style");
     //insérer le paragraphe dans l'élément toDoContainer
     toDoContainer.appendChild(paragraph);
 
@@ -20,7 +20,12 @@ addToDoButton.onclick = function () {
     inputField.value = "";
 
     //barré le paragraphe quand pn clique dessus
-    paragraph.addEventListener('click',function(){
-       paragraph.classList.add('paragraph_click')
-    })
+    paragraph.addEventListener("click", function () {
+        paragraph.classList.add("paragraph_click");
+    });
+
+    // supprimer la tache
+    paragraph.addEventListener("dblclick", function () {
+        toDoContainer.removeChild(paragraph);
+    });
 };
