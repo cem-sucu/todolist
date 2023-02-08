@@ -77,3 +77,9 @@ button {
         transform: translateY(50px);
     }
 }
+
+.paragraph_click {
+    background-color: rgb(247, 118, 118);
+    text-decoration: line-through;
+
+}

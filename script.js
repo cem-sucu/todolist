@@ -18,4 +18,9 @@ addToDoButton.onclick = function () {
 
     //on vide l'input une fois le paragraphe ajouté
     inputField.value = "";
+
+    //barré le paragraphe quand pn clique dessus
+    paragraph.addEventListener('click',function(){
+       paragraph.classList.add('paragraph_click')
+    })
 };
